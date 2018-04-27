@@ -1,0 +1,69 @@
+.team{
+ background-color: mediumseagreen;
+ font-family: "sans-serif";
+}
+
+.team h1{
+ text-align: center;
+ color: darkslateblue;
+ font-size: 150%;
+}
+
+
+#ourTeam {
+  width: 90vw;
+  heigh: 40vh;
+  margin: 5vw;
+  
+}
+
+#ourTeam img{
+ width: 30%;
+ margin: 1.5%;
+}
+
+#ourTeam div{
+ width: 33%;
+ margin: 0;
+ text-align: center;
+ color: white;
+ float: left;
+ font-size: 1.2em;
+ font-weight: bold;
+}
+
+#checkprices,#companyHeader{
+ width: 100vw;
+ display: none;
+ background-color: lightgrey;
+ clear: both;
+ 
+}
+
+#companyHeader h1{
+ color: orange; 
+ font-weight: normal;
+ z-index: 3000;
+ margin: 0px;
+ 
+}
+
+#companyHeader p{
+ height: 1vh;
+}
+
+#checkprices p{
+ height: 1vh;
+}
+
+iframe{
+ display: none;
+}
+
+#checkprices button{
+ font-size: 1.2em;
+ color: black;
+ font-weight: bold;
+ border-radius: 1vh;
+ border: solid black thin;
+}
