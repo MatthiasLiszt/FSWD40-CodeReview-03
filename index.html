@@ -11,13 +11,21 @@
 <h1>Our Team</h1>
 <div id="ourTeam"></div>
 </div>
-<iframe src="calculate.html"></iframe>
+<iframe src="calculate.html" id="calculationFrame"></iframe>
 
-<div id="checkprices"><p>&nbsp;</p><center><button>check prices</button></center><p>&nbsp;</p></div>
+<div id="checkprices"><p>&nbsp;</p>
+   <center><button id="checkPriceButton">check prices</button></center>
+  <p>&nbsp;</p>
+</div>
+<div id="calculationResults"><p>&nbsp;</p><center>Printed calculation goes here.</center><p>&nbsp;</p></div>
 <script src="js/data.json" ></script>
 <script src="js/sample.js" ></script>
+<script src="js/calculate.js"></script>
 <script>loadTeamData();
         showUpDown();
+        initializeButtons();
+        eraseLocalStorage();
+        setInterval(function(){showInsuranceCalculation();},200);
 </script>
 </body> 
 </html>

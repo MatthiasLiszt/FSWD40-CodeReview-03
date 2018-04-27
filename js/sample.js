@@ -33,3 +33,37 @@ function showUpDown(){
  document.getElementById('checkprices').style.display="block";
 
 }
+
+function initializeButtons(){
+ document.getElementById("checkPriceButton").onclick=function(){showCalculationFrame();};
+}
+
+function showCalculationFrame(){
+ document.getElementById("calculationFrame").style.display="block"; 
+ document.getElementById("teamWrapper").style.display="none";
+ document.getElementById("checkprices").style.display="none";
+ document.getElementById("calculationResults").style.display="block";
+}
+
+function eraseLocalStorage(){
+ localStorage.setItem("insuranceCalculated","false");
+ localStorage.setItem("insuranceAmount","0");
+ localStorage.setItem("insureeName","No one");
+}
+
+function checkCalculatedInsurance(){
+ if(localStorage.insuranceCalculated=="true")
+  {return true;}
+ else
+  {return false;}
+}
+
+function showInsuranceCalculation(){
+ if(checkCalculatedInsurance())
+  {var el=document.getElementById('calculationResults');
+   var amount=Math.round(localStorage.insuranceAmount*100)/100;
+   var text=localStorage.insureeName+", your insurance costs "+amount+" &euro;.";
+   el.innerHTML="<p>&nbsp;</p><center>"+text+"<p>&nbsp</p>";
+  }
+}
+

@@ -32,12 +32,12 @@
  font-weight: bold;
 }
 
-#checkprices,#companyHeader{
+#checkprices,#companyHeader,#calculationResults{
  width: 100vw;
  display: none;
  background-color: lightgrey;
  clear: both;
- 
+  
 }
 
 #companyHeader h1{
@@ -58,6 +58,9 @@
 
 iframe{
  display: none;
+ width: 100vw;
+ border: none;
+ height: 30vh;
 }
 
 #checkprices button{
@@ -66,4 +69,29 @@ iframe{
  font-weight: bold;
  border-radius: 1vh;
  border: solid black thin;
+}
+
+
+.calculate{
+ background-color: darkblue;
+ font-family: "sans-serif";
+ 
+}
+
+.calculate table{
+ width: 60%;
+ margin: 0 auto;
+ color: white;
+ font-weight: bold;
+ color: white;
+}
+
+.calculate input{
+ border-radius: 1vw;
+}
+
+.calculate button{
+ border-radius: 1vw;
+ color: black;
+ font-weight: bold;
 }
