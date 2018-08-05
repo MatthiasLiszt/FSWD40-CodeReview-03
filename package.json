@@ -1,0 +1,19 @@
+{
+  "name": "codereview3",
+  "version": "1.0.0",
+  "description": "see url",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthiasLiszt/FSWD40-CodeReview-03.git"
+  },
+  "author": "Matthias Liszt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthiasLiszt/FSWD40-CodeReview-03/issues"
+  },
+  "homepage": "https://github.com/MatthiasLiszt/FSWD40-CodeReview-03#readme"
+}
